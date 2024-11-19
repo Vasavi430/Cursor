@@ -1,0 +1,9 @@
+import random
+
+def flip_coin():
+    # Randomly choose either "Heads" or "Tails"
+    result = random.choice(["Heads", "Tails"])
+    return result
+
+# Flip the coin and display the result
+print("Coin flip result:", flip_coin())
