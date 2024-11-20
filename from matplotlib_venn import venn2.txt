@@ -1,0 +1,18 @@
+from matplotlib_venn import venn2
+import matplotlib.pyplot as plt
+
+# Set1 = {2, 3, 4, 5, 6, 7}
+# Set2 = {4, 5, 6, 7, 8, 9}
+
+# Find the intersection and differences
+set1 = {2, 3, 4, 5, 6, 7}
+set2 = {4, 5, 6, 7, 8, 9}
+
+# Calculate the sizes of the different regions
+set1_only = set1 - set2
+set2_only = set2 - set1
+intersection = set1.intersection(set2)
+
+venn2(subsets=(len(set1_only), len(intersection), len(set2_only)),
+       set_labels=('Set1', 'Set2'))
+plt.show()
