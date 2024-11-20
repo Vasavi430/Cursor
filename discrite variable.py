@@ -1,4 +1,9 @@
-import random
+# Declare a discrete variable
+age = 25
 
-def bernoulli_trial(p):
-    return 1 if random.random() < p else 0
+# Print the value
+print("Age:", age)
+
+# Assign a new value
+age = 30
+print("New age:", age)
